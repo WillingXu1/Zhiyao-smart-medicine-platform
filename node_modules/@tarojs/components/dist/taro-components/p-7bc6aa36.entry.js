@@ -1,0 +1,1 @@
+import{r as o,h as r,H as t}from"./p-dd7a128d.js";import{n}from"./p-dbdb9de9.js";import"@tarojs/taro";const s=class{constructor(r){o(this,r)}componentDidLoad(){n("OpenContainer",this)}render(){return r(t,null)}};export{s as taro_open_container_core}

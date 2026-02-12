@@ -1,0 +1,88 @@
+.settings-page {
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 卡片样式 */
+.settings-card {
+  border-radius: 12px;
+}
+
+.settings-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.settings-card .ant-card-head-title {
+  font-weight: 500;
+}
+
+/* Tab样式 */
+.settings-tabs .ant-tabs-tab {
+  padding: 12px 0;
+}
+
+.settings-tabs .ant-tabs-tab .anticon {
+  margin-right: 8px;
+}
+
+.settings-tabs .ant-tabs-ink-bar {
+  background: #10B981;
+}
+
+.settings-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #10B981;
+}
+
+/* 头像区域 */
+.avatar-col {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  background: #f0fdf4;
+  color: #10B981;
+}
+
+.upload-btn {
+  margin-top: 8px;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* 表单样式 */
+.settings-form .ant-input-affix-wrapper:focus,
+.settings-form .ant-input-affix-wrapper-focused {
+  border-color: #10B981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+}
+
+/* 提交按钮 */
+.submit-btn {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  border: none;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+}
+
+/* 响应式 */
+@media (max-width: 576px) {
+  .avatar-col {
+    margin-bottom: 24px;
+  }
+}

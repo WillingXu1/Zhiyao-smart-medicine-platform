@@ -1,0 +1,168 @@
+.home-page {
+  background: #f5f7fa;
+}
+
+.service-bar {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.service-icon {
+  font-size: 20px;
+}
+
+.home-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.banner-carousel {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.banner-item {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.category-item:hover {
+  background: #f0fdf4;
+}
+
+.category-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.category-name {
+  font-size: 14px;
+  color: #333;
+}
+
+.hot-medicine-card {
+  border-radius: 12px;
+}
+
+.medicine-item {
+  border-radius: 12px;
+  height: 100%;
+}
+
+.medicine-item .ant-card-body {
+  padding: 12px;
+}
+
+.medicine-img {
+  height: 100px;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0fdf4;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.medicine-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.medicine-info {
+  text-align: left;
+}
+
+.medicine-tag {
+  margin-bottom: 8px;
+}
+
+.medicine-name {
+  margin: 0 0 4px 0 !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.medicine-spec {
+  font-size: 11px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.medicine-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.current-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ef4444;
+}
+
+.original-price {
+  font-size: 11px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* 响应式布局优化 */
+@media (max-width: 1200px) {
+  .medicine-img {
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    padding: 12px;
+  }
+  
+  .service-bar {
+    gap: 20px;
+    padding: 12px 16px;
+    flex-wrap: wrap;
+  }
+  
+  .medicine-img {
+    height: 80px;
+  }
+}

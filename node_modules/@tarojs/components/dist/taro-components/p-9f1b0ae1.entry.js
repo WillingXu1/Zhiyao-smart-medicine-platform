@@ -1,0 +1,1 @@
+import{r as o,h as r,H as s}from"./p-dd7a128d.js";import{n as t}from"./p-dbdb9de9.js";import"@tarojs/taro";const d=class{constructor(r){o(this,r)}componentDidLoad(){t("NestedScrollBody",this)}render(){return r(s,null)}};export{d as taro_nested_scroll_body_core}

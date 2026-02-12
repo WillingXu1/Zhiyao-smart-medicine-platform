@@ -1,0 +1,66 @@
+.address-page {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.address-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.address-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.address-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.address-info {
+  flex: 1;
+}
+
+.address-header {
+  margin-bottom: 8px;
+}
+
+.address-header .name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 16px;
+}
+
+.address-header .phone {
+  font-size: 14px;
+  color: #666;
+  margin-right: 12px;
+}
+
+.address-detail {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.address-actions {
+  flex-shrink: 0;
+  margin-left: 24px;
+}

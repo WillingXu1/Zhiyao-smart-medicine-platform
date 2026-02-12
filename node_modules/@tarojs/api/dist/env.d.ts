@@ -1,0 +1,16 @@
+declare const ENV_TYPE: {
+    WEAPP: string;
+    SWAN: string;
+    ALIPAY: string;
+    TT: string;
+    QQ: string;
+    JD: string;
+    WEB: string;
+    RN: string;
+    HARMONY: string;
+    QUICKAPP: string;
+    HARMONYHYBRID: string;
+    ASCF: string;
+};
+declare function getEnv(): string;
+export { ENV_TYPE, getEnv };

@@ -1,0 +1,114 @@
+.user-center-page {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.login-prompt-card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 12px;
+}
+
+.user-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.user-detail {
+  margin-top: 16px;
+}
+
+.user-name {
+  margin-bottom: 4px !important;
+}
+
+.menu-card {
+  border-radius: 12px;
+}
+
+.menu-card .ant-menu {
+  border: none;
+}
+
+.menu-card .ant-menu-item {
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.logout-wrapper {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.content-card {
+  min-height: 500px;
+  border-radius: 12px;
+}
+
+.user-profile {
+  padding: 16px;
+}
+
+.profile-form {
+  margin-top: 24px;
+}
+
+.profile-row {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-row .label {
+  width: 100px;
+  color: #666;
+}
+
+.profile-row .value {
+  flex: 1;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  .user-card,
+  .menu-card {
+    margin-bottom: 16px;
+  }
+
+  .user-info {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .user-detail {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .menu-card .ant-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-card .ant-menu-item {
+    flex: 1;
+    min-width: 100px;
+  }
+}

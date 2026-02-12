@@ -1,0 +1,164 @@
+.order-detail-page {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+}
+
+.status-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.status-tag {
+  font-size: 16px;
+  padding: 4px 12px;
+}
+
+.order-no {
+  color: #666;
+}
+
+.order-steps {
+  margin: 24px 0;
+}
+
+.status-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.info-card,
+.items-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.info-icon {
+  color: #10B981;
+  font-size: 16px;
+}
+
+.info-row.remark {
+  color: #666;
+  font-style: italic;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-right: 16px;
+  overflow: hidden;
+}
+
+.item-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.item-price-qty {
+  width: 100px;
+  text-align: right;
+}
+
+.item-price {
+  display: block;
+  color: #666;
+}
+
+.item-qty {
+  display: block;
+  color: #999;
+  font-size: 12px;
+}
+
+.item-subtotal {
+  width: 100px;
+  text-align: right;
+  font-weight: 600;
+  color: #ef4444;
+}
+
+.summary-card {
+  border-radius: 12px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.summary-row.total {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.free-delivery {
+  color: #10B981;
+}
+
+.final-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,107 @@
+.medicine-list-page {
+  padding: 16px;
+}
+
+.search-bar {
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.search-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 400px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.category-select {
+  width: 150px;
+}
+
+.sort-select {
+  width: 150px;
+}
+
+.medicine-list-card {
+  border-radius: 12px;
+}
+
+.medicine-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.medicine-card .ant-card-cover {
+  padding: 16px;
+  background: #f9fafb;
+}
+
+.medicine-cover {
+  height: 160px;
+  object-fit: contain;
+}
+
+.medicine-cover-placeholder {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0fdf4;
+}
+
+.medicine-card-body {
+  padding: 8px 0;
+}
+
+.medicine-tags {
+  margin-bottom: 8px;
+}
+
+.medicine-card .medicine-name {
+  margin-bottom: 4px !important;
+  font-size: 14px;
+  line-height: 1.4;
+  height: 40px;
+}
+
+.medicine-spec {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.medicine-manufacturer {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.medicine-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.medicine-price-row .current-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ef4444;
+}
+
+.medicine-price-row .original-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.pagination-wrapper {
+  margin-top: 24px;
+  text-align: center;
+}

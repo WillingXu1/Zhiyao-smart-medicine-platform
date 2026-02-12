@@ -1,0 +1,1 @@
+import{r,h as o,H as t}from"./p-dd7a128d.js";import{n as d}from"./p-dbdb9de9.js";import"@tarojs/taro";const s=class{constructor(o){r(this,o)}componentDidLoad(){d("GridBuilder",this)}render(){return o(t,null)}};export{s as taro_grid_builder_core}
