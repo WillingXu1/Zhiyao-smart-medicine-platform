@@ -129,5 +129,21 @@ npm run dev
     *   用户端: `deploy/frontend/customer/`
 3.  **托管**: 将生成的静态文件上传到 Nginx/宝塔网站目录即可。
 
-## �📝 License
-This project is licensed under the MIT License.
+
+## �📝 许可证
+本项目采用 MIT 许可证[LICENSE](https://github.com/WillingXu1/Zhiyao-smart-medicine-platform/blob/18e77ef9ae85006f1f569dde82fcdf1102e2894e/LICENSE)。
+
+
+## 免责声明与用途说明
+
+本项目用于学习研究、竞赛、课程设计与毕业设计，不具备商用资质，项目内的示例数据与资源仅作演示用途。
+
+## 贡献指南
+
+欢迎提交 PR 或 Issue 来优化本项目。
+
+如有问题，可以有些邮箱联系我，也可以进行交流，项目不足之处，还请多多担待。
+
+> **作者**: zxs
+> **邮箱**: 2571293150@qq.com  
+> **GitHub**: [[Zhiyao](https://github.com/WillingXu1/Zhiyao-smart-medicine-platform.git)
