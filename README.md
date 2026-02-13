@@ -131,7 +131,7 @@ npm run dev
 
 
 ## �📝 许可证
-本项目采用 MIT 许可证[LICENSE](https://github.com/WillingXu1/Zhiyao-smart-medicine-platform/blob/18e77ef9ae85006f1f569dde82fcdf1102e2894e/LICENSE)。
+本项目采用 MIT 许可证[LICENSE](https://github.com/WillingXu1/Zhiyao-smart-medicine-platform/blob/008818400c012259af068aafdc22d994bbf42eef/LICENSE)。
 
 
 ## 免责声明与用途说明
@@ -146,4 +146,4 @@ npm run dev
 
 > **作者**: zxs
 > **邮箱**: 2571293150@qq.com  
-> **GitHub**: [[Zhiyao](https://github.com/WillingXu1/Zhiyao-smart-medicine-platform.git)
+> **GitHub**: [[Zhiyao]](https://github.com/WillingXu1/Zhiyao-smart-medicine-platform.git)
