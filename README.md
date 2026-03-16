@@ -30,7 +30,7 @@
 *   **持久层**: MyBatis-Plus, MySQL 8.0
 *   **缓存/消息**: Redis, WebSocket (实时消息)
 *   **工具**: Knife4j (API 文档), Lombok, Hutool
-*   **AI 集成**: DeepSeek / OpenAI API
+*   **AI 集成**: Ollama + Qwen2.5
 *   **云服务**: 阿里云 OSS (文件存储)
 
 ### Frontend (前端)
@@ -41,6 +41,28 @@
     *   **管理端**: Ant Design Pro Components
 *   **样式方案**: TailwindCSS, CSS Modules
 
+### 主要依赖
+
+| 依赖项                         | 版本          | 描述                |
+| ------------------------------ | ------------- | ------------------- |
+| JDK                            | 21            | Java开发工具包      |
+| SpringBoot                     | 3.3.5         | 核心框架            |
+| Mysql                          | 8.0.33        | 数据库连接器        |
+| Druid                          | 1.2.24        | 数据库连接池        |
+| MyBatis Plus                   | 3.5.8         | ORM框架             |
+| Hutool                         | 5.7.17        | 工具类库            |
+| Lombok                         | 1.18.36       | 简化代码库          |
+| OkHttp                         | 4.9.3         | HTTP客户端          |
+| Minio                          | 8.5.14        | 对象存储客户端      |
+| Spring Security Crypto         | 5.3.8.RELEASE | 安全加密库          |
+| Sa-Token Redis                 | 1.40.0        | Sa-Token整合Redis   |
+| Sa-Token Spring Boot Starter   | 1.39.0        | Sa-Token权限认证    |
+| Sa-Token Core                  | 1.39.0        | Sa-Token核心库      |
+| Knife4j                        | 4.4.0         | API文档生成工具     |
+| Spring Boot Starter Data Redis | 3.1.0         | Redis支持           |
+| Spring Boot Starter Mail       |               | 邮件服务            |
+| Apache HttpClient              | 4.5.13        | HTTP客户端          |
+| FastJson                       | 2.0.54        | JSON解析库          |
 
 
 ## 🖼️项目实现图 (Project Implementation Diagram)
