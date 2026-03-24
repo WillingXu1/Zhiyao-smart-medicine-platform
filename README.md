@@ -6,7 +6,7 @@
 ## 🚀 核心功能 (Core Features)
 
 *   **👨‍⚕️ 用户端 (Customer Web)**
-    *   **AI 智能问诊**：基于大模型 DeepSeek 的健康咨询助手。
+    *   **AI 智能问诊**：基于 Qwen2.5-1.5B LoRA 微调模型的医药咨询助手，结合 RAG 与风险分级约束，提升回答可靠性与安全性。
     *   **医药商城**：药品搜索、分类浏览、购物车、在线支付。
     *   **订单管理**：实时查看订单状态、物流轨迹、评价晒单。
     *   **个人中心**：收货地址管理、我的收藏、电子病历/处方管理。
@@ -25,12 +25,32 @@
 
 ## 🛠 技术栈 (Tech Stack)
 
+* **核心能力关键词**: Spring Boot 3, Spring AI, Qwen2.5-1.5B (LoRA), RAG, Prompt Engineering, Redis, Minio, MyBatis-Plus
+
+## 🧠 模型微调与安全增强 (Qwen2.5-1.5B LoRA)
+
+1. **LoRA 微调与评测闭环**：基于 Qwen2.5-1.5B 构建“数据清洗 + 指令重构 + 检索增强”的训练体系，并设计评测闭环；针对医疗高风险问答优化模型幻觉，使幻觉率由 100% 降至 53.5%（内部下降 65.0%，外部下降 30.4%），显著提升模型输出可靠性。
+2. **风险识别与分级约束**：在推理阶段引入风险识别与分级约束机制，通过拒答控制与人工兜底限制高风险输出，实现医疗场景下的可控生成与安全边界约束。
+3. **医药垂直 RAG Pipeline**：构建分块、向量化、检索增强的一体化 RAG 流程，并结合 Prompt 约束注入证据片段，提升回答的事实一致性与可解释性。
+
+### 🧠 模型服务接入（推荐远端 Qwen2.5-1.5B SFT）
+
+* 推荐使用远端微调服务（OpenAI Compatible）：
+    * `base-url`: `http://<server-ip>:8001`
+    * `chat-path`: `/v1/chat/completions`
+    * `model`: `qwen2.5-1.5b-medical-sft`
+* 可选本地 Ollama 方案（开发调试）：
+    * 安装 Ollama: https://ollama.com
+    * 下载模型: `ollama pull qwen2.5:0.5b`
+    * 启动服务: `ollama serve qwen2.5:0.5b --device cpu --threads 4`
+
+
 ### Backend (后端)
 *   **核心框架**: Java 17, Spring Boot 3
 *   **持久层**: MyBatis-Plus, MySQL 8.0
 *   **缓存/消息**: Redis, WebSocket (实时消息)
 *   **工具**: Knife4j (API 文档), Lombok, Hutool
-*   **AI 集成**: Ollama + Qwen2.5
+*   **AI 集成**: Spring AI + OpenAI Compatible API (Qwen2.5-1.5B LoRA SFT)
 *   **云服务**: 阿里云 OSS (文件存储)
 
 ### Frontend (前端)
@@ -41,28 +61,6 @@
     *   **管理端**: Ant Design Pro Components
 *   **样式方案**: TailwindCSS, CSS Modules
 
-### 主要依赖
-
-| 依赖项                         | 版本          | 描述                |
-| ------------------------------ | ------------- | ------------------- |
-| JDK                            | 21            | Java开发工具包      |
-| SpringBoot                     | 3.3.5         | 核心框架            |
-| Mysql                          | 8.0.33        | 数据库连接器        |
-| Druid                          | 1.2.24        | 数据库连接池        |
-| MyBatis Plus                   | 3.5.8         | ORM框架             |
-| Hutool                         | 5.7.17        | 工具类库            |
-| Lombok                         | 1.18.36       | 简化代码库          |
-| OkHttp                         | 4.9.3         | HTTP客户端          |
-| Minio                          | 8.5.14        | 对象存储客户端      |
-| Spring Security Crypto         | 5.3.8.RELEASE | 安全加密库          |
-| Sa-Token Redis                 | 1.40.0        | Sa-Token整合Redis   |
-| Sa-Token Spring Boot Starter   | 1.39.0        | Sa-Token权限认证    |
-| Sa-Token Core                  | 1.39.0        | Sa-Token核心库      |
-| Knife4j                        | 4.4.0         | API文档生成工具     |
-| Spring Boot Starter Data Redis | 3.1.0         | Redis支持           |
-| Spring Boot Starter Mail       |               | 邮件服务            |
-| Apache HttpClient              | 4.5.13        | HTTP客户端          |
-| FastJson                       | 2.0.54        | JSON解析库          |
 
 
 ## 🖼️项目实现图 (Project Implementation Diagram)
