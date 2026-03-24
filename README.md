@@ -3,6 +3,13 @@
 ## 📖 项目简介 (Introduction)
 本项目是一个全栈式 O2O 医药健康服务平台，旨在打通患者、药店商家、平台管理之间的业务闭环。系统集成了 **AI 智能问诊**、**医药电商**等核心功能，为用户提供便捷的购药与健康咨询服务，同时赋能商家实现数字化经营。
 
+<div align="center">
+  <img src="./result/demo.gif" alt="智药核心功能演示" width="25%">
+  <br/>
+  <small><i>🎬 “智药”核心功能演示</i></small>
+</div>
+
+
 ## 🚀 核心功能 (Core Features)
 
 *   **👨‍⚕️ 用户端 (Customer Web)**
@@ -25,7 +32,7 @@
 
 ## 🛠 技术栈 (Tech Stack)
 
-* **核心能力关键词**: Spring Boot 3, Spring AI, Qwen2.5-1.5B (LoRA), RAG, Prompt Engineering, Redis, Minio, MyBatis-Plus
+Spring Boot 3, Spring AI, Qwen2.5-1.5B (LoRA), RAG, Prompt Engineering, Redis, Minio, MyBatis-Plus
 
 ## 🧠 模型微调与安全增强 (Qwen2.5-1.5B LoRA)
 
