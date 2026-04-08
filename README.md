@@ -219,10 +219,6 @@ npm run dev
 本项目采用 MIT 许可证[LICENSE](https://github.com/WillingXu1/Zhiyao-smart-medicine-platform/blob/008818400c012259af068aafdc22d994bbf42eef/LICENSE)。
 
 
-## 免责声明与用途说明
-
-本项目用于学习研究、竞赛、课程设计与毕业设计，不具备商用资质，项目内的示例数据与资源仅作演示用途。
-
 ## 贡献指南
 
 欢迎提交 PR 或 Issue 来优化本项目。
