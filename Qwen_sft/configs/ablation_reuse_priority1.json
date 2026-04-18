@@ -1,0 +1,9 @@
+{
+  "qwen2.5-1.5b-instruct": {
+    "family": "Qwen",
+    "size_b": 1.5,
+    "best_ckpt": "/mnt/public/zxs/course/SFT_qwen/qwen2.5-1.5b_medical_lora_run9_2_no_len_filter_r1/v0-20260329-102811/checkpoint-87",
+    "metrics_json": "/mnt/public/zxs/course/SFT_qwen/output/eval_run9_2_base_compare/extended_metrics_base_vs_run9_2.json",
+    "status": "ok_reused_run9_2"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "specialty_name": "妇产科学",
+  "default_system_prompt": "你是一位严格遵循中国妇产科临床指南的医生。",
+  "direct_dept_patterns": [
+    "妇产",
+    "妇科",
+    "产科",
+    "计划生育",
+    "生殖",
+    "围产"
+  ],
+  "candidate_dept_patterns": [
+    "^内科$",
+    "^全科$",
+    "^普通内科$"
+  ],
+  "aux_candidate_dept_patterns": [
+    "^儿科$"
+  ],
+  "specialty_terms": [
+    "月经", "经期", "闭经", "痛经", "阴道", "白带", "宫颈", "子宫", "卵巢", "输卵管",
+    "盆腔", "妊娠", "怀孕", "孕周", "胎动", "胎心", "先兆流产", "流产", "早产", "分娩",
+    "产后", "哺乳", "剖宫产", "顺产", "排卵", "不孕", "多囊", "子宫肌瘤", "子宫内膜异位", "宫外孕"
+  ],
+  "specialty_oncology_terms": [
+    "宫颈癌", "卵巢癌", "子宫内膜癌", "绒癌", "滋养细胞肿瘤", "外阴癌"
+  ],
+  "specialty_oncology_dept_patterns": [
+    "宫颈", "卵巢", "子宫", "滋养细胞", "外阴"
+  ],
+  "drug_groups": {
+    "progesterone_support": ["黄体酮", "地屈孕酮", "孕激素", "注射用黄体酮"],
+    "ovulation_induction": ["来曲唑", "克罗米芬", "枸橼酸氯米芬", "促性腺激素"],
+    "uterine_contraction": ["缩宫素", "卡前列素氨丁三醇", "米索前列醇", "卡前列甲酯"],
+    "tocolytic": ["硫酸镁", "利托君", "阿托西班", "硝苯地平"],
+    "antibiotic_obgyn": ["甲硝唑", "克林霉素", "头孢呋辛", "阿莫西林", "阿奇霉素"],
+    "gynecology_endocrine": ["屈螺酮炔雌醇", "炔雌醇环丙孕酮", "地诺孕素", "戊酸雌二醇"],
+    "lactation_safe": ["布洛芬", "对乙酰氨基酚", "头孢克肟", "阿莫西林克拉维酸钾"],
+    "pregnancy_complication": ["低分子肝素", "阿司匹林", "左甲状腺素钠", "胰岛素"],
+    "antiemetic_pregnancy": ["维生素B6", "多西拉敏", "甲氧氯普胺", "昂丹司琼"],
+    "fertility_support": ["辅酶Q10", "叶酸", "复方维生素", "二甲双胍"]
+  },
+  "precision_group_names": [
+    "progesterone_support",
+    "ovulation_induction",
+    "uterine_contraction",
+    "tocolytic",
+    "antibiotic_obgyn",
+    "gynecology_endocrine",
+    "pregnancy_complication",
+    "antiemetic_pregnancy"
+  ],
+  "recall_terms": [
+    "达芙通", "优思明", "优思悦", "妈富隆", "保胎药", "促排药", "催产针", "无痛分娩", "hcg", "ivf"
+  ]
+}

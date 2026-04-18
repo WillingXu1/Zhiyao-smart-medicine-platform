@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@tarojs/webpack5-runner": "^3.6.25",
+    "babel-preset-taro": "^3.6.25"
+  }
+}

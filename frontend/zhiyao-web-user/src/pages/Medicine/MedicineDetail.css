@@ -1,0 +1,178 @@
+.medicine-detail-page {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+}
+
+.breadcrumb {
+  margin-bottom: 16px;
+}
+
+.medicine-info-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.medicine-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 300px;
+}
+
+.medicine-image img {
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 280px;
+  background: #f0fdf4;
+  border-radius: 8px;
+}
+
+.medicine-main-info {
+  padding: 16px 0;
+}
+
+.medicine-header {
+  margin-bottom: 16px;
+}
+
+.prescription-tag {
+  margin-bottom: 8px;
+}
+
+.medicine-name {
+  margin-bottom: 4px !important;
+}
+
+.generic-name {
+  display: block;
+  font-size: 14px;
+}
+
+.price-section {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 16px;
+  background: #fef2f2;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.price-section .label {
+  color: #666;
+  font-size: 14px;
+}
+
+.price-section .current-price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.price-section .original-price {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.info-row {
+  display: flex;
+  padding: 8px 0;
+}
+
+.info-row .label {
+  width: 80px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.info-row .value {
+  flex: 1;
+  color: #333;
+}
+
+.info-row .stock-warning {
+  color: #f59e0b;
+}
+
+.quantity-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.quantity-row .label {
+  width: 80px;
+  color: #666;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.action-buttons .ant-btn {
+  height: 44px;
+  border-radius: 8px;
+}
+
+.action-buttons .ant-btn-primary {
+  min-width: 140px;
+}
+
+.medicine-desc-card {
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.medicine-desc-card .ant-descriptions-item-label {
+  width: 140px;
+  background: #f9fafb;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .medicine-image {
+    margin-bottom: 24px;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+
+  .action-buttons .ant-btn {
+    flex: 1;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "internal": {
+    "qwen2.5-7b-instruct": {
+      "n": 59,
+      "pred_drug_total": 59,
+      "ref_drug_total": 102,
+      "aligned_drug_total": 23,
+      "contra_case_total": 4,
+      "DEP": 0.3898305084745763,
+      "DER": 0.22549019607843138,
+      "DUC": 0.30434782608695654,
+      "FCF": 0.34782608695652173,
+      "CCR": 0.0,
+      "GI_prescription_score": 0.3945821954426575
+    }
+  },
+  "external": {
+    "qwen2.5-7b-instruct": {
+      "n": 23,
+      "pred_drug_total": 20,
+      "ref_drug_total": 14,
+      "aligned_drug_total": 0,
+      "contra_case_total": 0,
+      "DEP": 0.0,
+      "DER": 0.0,
+      "DUC": 0.0,
+      "FCF": 0.0,
+      "CCR": 0.0,
+      "GI_prescription_score": 0.1
+    }
+  },
+  "pooled": {
+    "qwen2.5-7b-instruct": {
+      "n": 82,
+      "DEP": 0.2804878048780488,
+      "DER": 0.16224294595887137,
+      "DUC": 0.21898197242841996,
+      "FCF": 0.2502651113467656,
+      "CCR": 0.0,
+      "GI_prescription_score": 0.31195548208679014
+    }
+  }
+}

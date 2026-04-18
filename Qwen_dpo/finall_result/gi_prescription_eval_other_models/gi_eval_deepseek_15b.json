@@ -1,0 +1,43 @@
+{
+  "internal": {
+    "deepseek-r1-distill-qwen-1.5b": {
+      "n": 59,
+      "pred_drug_total": 36,
+      "ref_drug_total": 102,
+      "aligned_drug_total": 4,
+      "contra_case_total": 4,
+      "DEP": 0.1111111111111111,
+      "DER": 0.0392156862745098,
+      "DUC": 0.0,
+      "FCF": 0.0,
+      "CCR": 0.25,
+      "GI_prescription_score": 0.12173202614379086
+    }
+  },
+  "external": {
+    "deepseek-r1-distill-qwen-1.5b": {
+      "n": 23,
+      "pred_drug_total": 7,
+      "ref_drug_total": 14,
+      "aligned_drug_total": 0,
+      "contra_case_total": 0,
+      "DEP": 0.0,
+      "DER": 0.0,
+      "DUC": 0.0,
+      "FCF": 0.0,
+      "CCR": 0.0,
+      "GI_prescription_score": 0.1
+    }
+  },
+  "pooled": {
+    "deepseek-r1-distill-qwen-1.5b": {
+      "n": 82,
+      "DEP": 0.07994579945799457,
+      "DER": 0.02821616451458632,
+      "DUC": 0.0,
+      "FCF": 0.0,
+      "CCR": 0.1798780487804878,
+      "GI_prescription_score": 0.1156364578351666
+    }
+  }
+}

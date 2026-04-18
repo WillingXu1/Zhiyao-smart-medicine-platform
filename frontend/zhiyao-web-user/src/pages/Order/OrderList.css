@@ -1,0 +1,52 @@
+.order-list-page {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-bottom: 16px;
+}
+
+.order-list-card {
+  border-radius: 12px;
+}
+
+.order-info {
+  cursor: pointer;
+}
+
+.order-no {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.order-items {
+  max-width: 300px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.order-item-row .item-name {
+  flex: 1;
+  max-width: 200px;
+}
+
+.order-item-row .item-qty {
+  flex-shrink: 0;
+}
+
+.order-amount {
+  font-weight: 600;
+  color: #ef4444;
+}
+
+.order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

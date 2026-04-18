@@ -1,0 +1,23 @@
+{
+  "qwen2.5-1.5b-instruct": {
+    "family": "Qwen",
+    "size_b": 1.5,
+    "status": "ok_reused",
+    "best_ckpt": "/mnt/public/zxs/course/SFT_qwen/qwen2.5-1.5b_medical_lora_run9_2_mix_70_30_no_len_filter/v4-20260328-154751/checkpoint-88",
+    "metrics_json": "/mnt/public/zxs/course/SFT_qwen/output/ablation_3090_20260328_195012/eval/qwen2.5-1.5b-instruct/extended_metrics_base_vs_qwen2.5-1.5b-instruct.json"
+  },
+  "deepseek-r1-distill-qwen-1.5b": {
+    "family": "DeepSeek",
+    "size_b": 1.5,
+    "status": "reused_skip_eval",
+    "best_ckpt": "/mnt/public/zxs/course/SFT_qwen/output/ablation_qwen3b_replace/runs/deepseek-r1-distill-qwen-1.5b/v0-20260329-144508/checkpoint-87",
+    "metrics_json": "/mnt/public/zxs/course/SFT_qwen/output/ablation_qwen3b_replace/eval/deepseek-r1-distill-qwen-1.5b/extended_metrics_base_vs_deepseek-r1-distill-qwen-1.5b.json"
+  },
+  "qwen2.5-3b-instruct": {
+    "family": "Qwen",
+    "size_b": 3.0,
+    "status": "reused_skip_eval",
+    "best_ckpt": "/mnt/public/zxs/course/SFT_qwen/output/ablation_qwen3b_replace/runs/qwen2.5-3b-instruct/v0-20260329-144508/checkpoint-87",
+    "metrics_json": "/mnt/public/zxs/course/SFT_qwen/output/ablation_qwen3b_replace/eval/qwen2.5-3b-instruct/extended_metrics_base_vs_qwen2.5-3b-instruct.json"
+  }
+}

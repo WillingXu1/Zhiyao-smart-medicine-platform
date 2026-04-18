@@ -1,0 +1,193 @@
+.checkout-page {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-bottom: 16px;
+}
+
+.empty-checkout {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 12px;
+}
+
+.address-card,
+.items-card,
+.remark-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+/* 地址选择样式 */
+.address-radio-group {
+  width: 100%;
+}
+
+.address-radio-item {
+  display: flex !important;
+  align-items: flex-start;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+
+.address-radio-item:hover {
+  border-color: #10B981;
+}
+
+.address-radio-item .ant-radio {
+  margin-top: 4px;
+}
+
+.ant-radio-wrapper-checked.address-radio-item {
+  border-color: #10B981;
+  background: #f0fdf4;
+}
+
+.address-select-item {
+  flex: 1;
+  margin-left: 8px;
+}
+
+.address-select-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.address-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.address-phone {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.address-select-detail {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.checkout-item:last-child {
+  border-bottom: none;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-right: 16px;
+  overflow: hidden;
+}
+
+.item-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.item-price-qty {
+  width: 100px;
+  text-align: right;
+}
+
+.item-price {
+  display: block;
+  color: #666;
+}
+
+.item-qty {
+  display: block;
+  color: #999;
+  font-size: 12px;
+}
+
+.item-subtotal {
+  width: 100px;
+  text-align: right;
+  font-weight: 600;
+  color: #ef4444;
+}
+
+.summary-card {
+  position: sticky;
+  top: 80px;
+  border-radius: 12px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.summary-row.total {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.free-delivery {
+  color: #10B981;
+}
+
+.final-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.submit-order-btn {
+  margin-top: 24px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.checkout-tips {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .summary-card {
+    position: static;
+    margin-top: 16px;
+  }
+}

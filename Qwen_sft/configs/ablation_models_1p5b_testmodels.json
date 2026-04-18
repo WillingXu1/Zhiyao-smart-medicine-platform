@@ -1,0 +1,25 @@
+{
+  "models": [
+    {
+      "name": "qwen2.5-1.5b-instruct",
+      "model_id": "/mnt/public/zxs/course/SFT_qwen/Qwen2.5-1.5B-Instruct",
+      "family": "Qwen",
+      "size_b": 1.5,
+      "priority": 1
+    },
+    {
+      "name": "deepseek-r1-distill-qwen-1.5b",
+      "model_id": "/mnt/public/zxs/course/SFT_qwen/TestModels/DeepSeek-R1-Distill-Qwen-1.5B",
+      "family": "DeepSeek",
+      "size_b": 1.5,
+      "priority": 1
+    },
+    {
+      "name": "glm-4-1.5b-chat",
+      "model_id": "/mnt/public/zxs/course/SFT_qwen/TestModels/GLM-4-1.5B-Chat",
+      "family": "GLM",
+      "size_b": 1.5,
+      "priority": 1
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+.main-layout {
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 0 24px;
+  height: 64px;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  font-size: 28px;
+  color: #10B981;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #10B981;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 400px;
+  top: 10px;
+  position: relative;
+}
+
+.search-input {
+  border-radius: 20px;
+}
+
+.nav-menu {
+  flex: 1;
+  border-bottom: none;
+  justify-content: center;
+}
+
+.nav-menu .ant-menu-item {
+  font-size: 15px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-btn {
+  font-size: 14px;
+}
+
+.user-avatar {
+  cursor: pointer;
+  background: #10B981;
+}
+
+.user-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+.user-trigger:hover {
+  background: #f5f5f5;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #333;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content {
+  margin-top: 64px;
+  min-height: calc(100vh - 64px - 120px);
+  background: #f5f7fa;
+}
+
+.footer {
+  background: #1e293b;
+  padding: 40px 24px;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}

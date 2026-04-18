@@ -1,0 +1,35 @@
+{
+  "inputs": {
+    "main": "/mnt/public/zxs/course/SFT_qwen/datasets/json/dataset_train_run9_2_mix_70_30_no_len_filter.json",
+    "external": "/mnt/public/zxs/course/SFT_qwen/data/datasets/json/dataset_external_24_latest_run9_1.json"
+  },
+  "counts": {
+    "main_raw": 455,
+    "external_raw": 24,
+    "dpo_all": 479,
+    "train": 383,
+    "val": 48,
+    "test": 48
+  },
+  "ratios": {
+    "train_ratio": 0.8,
+    "val_ratio": 0.1,
+    "test_ratio_effective": 0.1002
+  },
+  "by_source": {
+    "main_455": 455,
+    "external_24": 24
+  },
+  "settings": {
+    "seed": 42,
+    "min_quality": 0.4,
+    "num_workers": 12
+  },
+  "files": {
+    "train": "/mnt/public/zxs/course/SFT_qwen/datasets/dpo/qwen7b_struct_align_dpo_run9_2_train.jsonl",
+    "val": "/mnt/public/zxs/course/SFT_qwen/datasets/dpo/qwen7b_struct_align_dpo_run9_2_val.jsonl",
+    "test": "/mnt/public/zxs/course/SFT_qwen/datasets/dpo/qwen7b_struct_align_dpo_run9_2_test.jsonl",
+    "all": "/mnt/public/zxs/course/SFT_qwen/datasets/dpo/qwen7b_struct_align_dpo_run9_2_all.jsonl"
+  },
+  "dpo_format": "jsonl with fields: prompt, chosen, rejected"
+}

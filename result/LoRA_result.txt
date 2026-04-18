@@ -1,0 +1,15 @@
+eval_loss: 1.5609 → 1.1995 → 0.9940 → 0.8944 → 0.8464 → 0.8262 → 0.8223 → 0.8222
+eval_token_acc: 0.7033 → 0.7626 → 0.7909 → 0.8064 → 0.8092 → 0.8169 → 0.8177 → 0.8177
+best checkpoint: qwen2.5-1.5b_medical_lora_run7_val20_r1/v0-20260324-172242/checkpoint-72
+
+核心结果：
+
+内部测试集效果对比：
+Base: n=20, overlap_mean=0.0714, len_ratio_mean=6.5228, repeat_mean=0.0097
+SFT: n=20, overlap_mean=0.4173, len_ratio_mean=2.0585, repeat_mean=0.0695
+样本级胜负: SFT 胜 20，Base 胜 0，平 0
+
+外部测试集效果对比：
+Base: n=23, overlap_mean=0.0576, len_ratio_mean=6.7766, repeat_mean=0.0062
+SFT: n=23, overlap_mean=0.1008, len_ratio_mean=1.9527, repeat_mean=0.0000
+样本级胜负: SFT 胜 16，Base 胜 7，平 0

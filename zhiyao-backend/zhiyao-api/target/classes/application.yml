@@ -1,0 +1,120 @@
+server:
+  port: 8081
+  address: 0.0.0.0  # 监听所有网络接口，允许局域网访问（真机调试必需）
+  servlet:
+    context-path: /api
+
+
+ai:
+  deepseek:
+    api-key: sk-22e534bbf4194961826ea8b523d56543  # 这个会覆盖默认值，需要使用你自己的api-key
+    base-url: "https://api.deepseek.com"
+    model: "deepseek-chat"
+
+spring:
+
+  web:
+    resources:
+      static-locations:
+        - classpath:/static/
+        - classpath:/META-INF/resources/
+        - classpath:/resources/
+        - classpath:/public/
+  mvc:
+    static-path-pattern: /**
+  application:
+    name: zhiyao-backend
+  profiles:
+    active: dev
+
+  # 文件上传配置
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+  # 数据源配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zhiyao?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+
+  # Redis配置
+  data:
+    redis:
+      host: 192.168.175.128  # redis数据库的地址
+      port: 6379 # redis数据库的端口
+      password: 123321  # redis数据库的密码（无密码留空）
+      database: 10 # redis操作的数据库（数据库和数据库之间是隔离的，默认为0号数据库）
+
+  # RabbitMQ配置
+  rabbitmq:
+    host: 192.168.175.128
+    port: 5672
+    username: javadevelop
+    password: 123321
+    virtual-host: /
+
+  # Jackson配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+
+# MyBatis-Plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.zhiyao.domain.entity
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# Knife4j API文档配置
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: '知药API'
+      paths-to-match: '/**'
+      packages-to-scan: com.zhiyao.api.controller
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    swagger-model-name: 实体类
+
+# JWT配置
+jwt:
+  secret: zhijian-secret-key-2024-very-long-secret-key-for-security
+  expiration: 72000000
+
+# 阿里云OSS配置
+alioss:
+  endpoint: oss-cn-shenzhen.aliyuncs.com
+  access-key-id: LTAI5tGnTGWVBnWNYacoCEAZ
+  access-key-secret: GIXZ2JHxaYxzQJeaByZoFfgblFN1wd
+  bucket-name: liuhaonan-java-ai
+
+# 日志配置
+logging:
+  level:
+    root: info
+    com.zhiyao: debug
+    com.baomidou.mybatisplus: debug
+
+# 所有网站的登录密码都是123456

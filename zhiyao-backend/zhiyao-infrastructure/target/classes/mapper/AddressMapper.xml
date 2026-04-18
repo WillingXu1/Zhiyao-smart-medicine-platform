@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhiyao.infrastructure.persistence.mapper.AddressMapper">
+
+    <select id="selectByUserId" resultType="com.zhiyao.infrastructure.persistence.po.AddressPO">
+        SELECT * FROM address
+        WHERE user_id = #{userId} AND deleted = 0
+        ORDER BY is_default DESC, create_time DESC
+    </select>
+
+    <update id="resetDefault">
+        UPDATE address SET is_default = 0 WHERE user_id = #{userId}
+    </update>
+
+</mapper>
