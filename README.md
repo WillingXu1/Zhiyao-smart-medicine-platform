@@ -9,7 +9,7 @@
 从业务数据流向看，三端页面通过 HTTP API 调用后端服务，后端在 `zhiyao-api -> zhiyao-application -> zhiyao-infrastructure` 链路中完成业务处理，并与 MySQL、Redis、阿里云 OSS 及 OpenAI Compatible 模型服务交互，最终将结果返回前端页面进行展示。
 
 <div align="center">
-  <img src="./result/result.gif" alt="智药平台演示" width="75%">
+  <img src="./result/result.gif" alt="智药平台演示" width="85%">
   <br/>
   <small><i>🎬 智药平台整体效果演示</i></small>
 </div>
