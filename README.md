@@ -8,6 +8,12 @@
 
 从业务数据流向看，三端页面通过 HTTP API 调用后端服务，后端在 `zhiyao-api -> zhiyao-application -> zhiyao-infrastructure` 链路中完成业务处理，并与 MySQL、Redis、阿里云 OSS 及 OpenAI Compatible 模型服务交互，最终将结果返回前端页面进行展示。
 
+<div align="center">
+  <img src="./result/result.gif" alt="智药平台演示" width="75%">
+  <br/>
+  <small><i>🎬 智药平台整体效果演示</i></small>
+</div>
+
 ## ✨ 当前工程亮点 (Highlights)
 
 - **多端协同架构**：同一套后端服务支撑用户端、商家端、管理端三类业务角色，覆盖药品浏览、下单、商家处理、平台审核等主要链路。
